@@ -10,9 +10,11 @@ import SwiftData
 
 @main
 struct FoodDiaryAppApp: App {
+	
+	
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            FoodRecord.self,
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
